@@ -43,6 +43,7 @@ cmake --build .
 - [1. Two Sum](/1-Two-Sum)
 - [9. Palindrome Number](/9-Palindrome-Number)
 - [13. Roman to Integer](/13-Roman-to-Integer)
+- [14. Longest Common Prefix](/14-Longest-Common-Prefix)
 
 ## License
 Distributed under the Presonal License. See [LICENSE](/LICENSE.md) for more information.
