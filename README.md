@@ -44,6 +44,7 @@ cmake --build .
 - [9. Palindrome Number](/9-Palindrome-Number)
 - [13. Roman to Integer](/13-Roman-to-Integer)
 - [14. Longest Common Prefix](/14-Longest-Common-Prefix)
+- [21. Merge Two Sorted Lists](/21-Merge-Two-Sorted-Lists)
 - [35. Search Insert Position](/35-Search-Insert-Position)
 - [278. First Bad Version](/278-First-Bad-Version)
 
