@@ -1,0 +1,68 @@
+# This file is a part of "Warface Module" project
+# Created by: Dylane
+# All rights reserved (c) 2023
+
+# .clangd file is used to configure the clangd language server
+# For more information, see https://clangd.llvm.org/config.html
+# Clang-Tidy checks: https://clang.llvm.org/extra/clang-tidy/checks/list.html
+# Based on clang version 16.0.1
+---
+CompileFlags:
+    Add: [ ]
+    Remove: [ ]
+    CompilationDatabase: .\Build
+Index:
+    Background: Build
+    StandardLibrary: Yes
+Style:
+    FullyQualifiedNamespaces: Yes
+Diagnostics:
+    ClangTidy:
+        Add: [ bugprone-*, cert-*, clang-analyzer-*, cppcoreguidelines-*, google-*, hicpp-*, misc-*, modernize-*, performance-*, readability-* ]
+        Remove: [ bugprone-argument-comment, bugprone-bad-signal-to-kill-thread, bugprone-macro-parentheses, bugprone-posix-return, bugprone-signal-handler, cert-dcl37-c, cert-dcl51-cpp, cppcoreguidelines-owning-memory, cppcoreguidelines-pro-type-reinterpret-cast, cppcoreguidelines-avoid-magic-numbers, google-readability-braces-around-statements, hicpp-no-assembler, hicpp-special-member-functions, hicpp-braces-around-statements, modernize-use-trailing-return-type, readability-magic-numbers, readability-uppercase-literal-suffix ]
+        CheckOptions:
+            bugprone-implicit-widening-of-multiplication-result.UseCXXStaticCastsInCppSources: true
+            bugprone-implicit-widening-of-multiplication-result.UseCXXHeadersInCppSources: true
+            bugprone-misplaced-widening-cast.CheckImplicitCasts: true
+            bugprone-not-null-terminated-result.WantToUseSafeFunctions: true
+            bugprone-reserved-identifier.Invert: false
+            bugprone-signed-char-misuse.DiagnoseSignedUnsignedCharComparisons: true
+            bugprone-suspicious-string-compare.WarnOnImplicitComparison: true
+            bugprone-suspicious-string-compare.WarnOnLogicalNotComparison: true
+            cppcoreguidelines-avoid-capture-default-when-capturing-this.IgnoreCaptureDefaultByReference: false
+            cppcoreguidelines-narrowing-conversions.WarnOnIntegerNarrowingConversion: true
+            cppcoreguidelines-narrowing-conversions.WarnOnIntegerToFloatingPointNarrowingConversion: true
+            cppcoreguidelines-narrowing-conversions.WarnOnFloatingPointNarrowingConversion: true
+            cppcoreguidelines-narrowing-conversions.WarnWithinTemplateInstantiation: true
+            cppcoreguidelines-narrowing-conversions.WarnOnEquivalentBitWidth: true
+            cppcoreguidelines-narrowing-conversions.PedanticMode: true
+            cppcoreguidelines-pro-type-member-init.IgnoreArrays: false
+            cppcoreguidelines-pro-type-member-init.UseAssignment: false
+            cppcoreguidelines-rvalue-reference-param-not-moved.AllowPartialMove: false
+            cppcoreguidelines-rvalue-reference-param-not-moved.IgnoreUnnamedParams: false
+            cppcoreguidelines-rvalue-reference-param-not-moved.IgnoreNonDeducedTemplateTypes: false
+            cppcoreguidelines-special-member-functions.AllowSoleDefaultDtor: true
+            misc-const-correctness.WarnPointersAsValues: true
+            misc-const-correctness.TransformPointersAsValues: true
+            misc-unused-parameters.StrictMode: true
+            misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic: true
+            performance-inefficient-string-concatenation.StrictMode: true
+            portability-simd-intrinsics.Suggest: true
+            readability-braces-around-statements.ShortStatementLines: 2
+            readability-function-cognitive-complexity.Threshold: 30
+            readability-inconsistent-declaration-parameter-name.Strict: true
+            readability-qualified-auto.AddConstToQualified: true
+            readability-redundant-access-specifiers.CheckFirstDeclaration: true
+            readability-simplify-boolean-expr.ChainedConditionalReturn: true
+            readability-simplify-boolean-expr.ChainedConditionalAssignment: true
+            readability-simplify-boolean-expr.SimplifyDeMorgan: true
+            readability-simplify-boolean-expr.SimplifyDeMorganRelaxed: true
+            readability-uniqueptr-delete-release.PreferResetCall: true
+    UnusedIncludes: Strict
+InlayHints:
+    Enabled: true
+    ParameterNames: true
+    DeducedTypes: true
+    Designators: true
+Hover:
+    ShowAKA: true

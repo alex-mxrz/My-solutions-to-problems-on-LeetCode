@@ -45,8 +45,17 @@ cmake --build .
 - [13. Roman to Integer](/13-Roman-to-Integer)
 - [14. Longest Common Prefix](/14-Longest-Common-Prefix)
 - [21. Merge Two Sorted Lists](/21-Merge-Two-Sorted-Lists)
+- [27. Remove Element](/27-Remove-Element)
+- [28. Find the Index of the First Occurrence in a String](/28-Find-the-Index-of-the-First-Occurrence-in-a-String)
 - [35. Search Insert Position](/35-Search-Insert-Position)
+- [58. Length of Last Word](/58-Length-of-Last-Word)
+- [66. Plus One](/66-Plus-One)
+- [67. Add Binary](/67-Add-Binary)
+- [69. Sqrt(x)](/69-Sqrt(x))
+- [70. Climbing Stairs](/70-Climbing-Stairs)
 - [278. First Bad Version](/278-First-Bad-Version)
+- [1071. Greatest Common Divisor of Strings](/1071-Greatest-Common-Divisor-of-Strings)
+- [1768. Merge Strings Alternately](/1768-Merge-Strings-Alternately)
 
 ## License
 Distributed under the Presonal License. See [LICENSE](/LICENSE.md) for more information.
